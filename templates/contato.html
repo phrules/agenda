@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatos</title>
+</head>
+<body>
+    <h2>Contatos</h2>
+
+    <ul style="font-size: 18px">
+        {% for contato in contatos %}
+            <li>{{ contato.nome }} - {{ contato.email }} - {{ contato.telefone }} </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
